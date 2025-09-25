@@ -1,0 +1,16 @@
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\bin\Debug\net9.0\Sales.Application.deps.json
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\bin\Debug\net9.0\Sales.Application.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\bin\Debug\net9.0\Sales.Application.pdb
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\bin\Debug\net9.0\Sales.Domain.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\bin\Debug\net9.0\Sales.Domain.pdb
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\Sales.Application.csproj.AssemblyReference.cache
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\Sales.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\Sales.Application.AssemblyInfoInputs.cache
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\Sales.Application.AssemblyInfo.cs
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\Sales.Application.csproj.CoreCompileInputs.cache
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\Sales.Application.sourcelink.json
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\Sales.Ap.0A743CAB.Up2Date
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\Sales.Application.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\refint\Sales.Application.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\Sales.Application.pdb
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Sales.Application\obj\Debug\net9.0\ref\Sales.Application.dll

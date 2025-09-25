@@ -1,0 +1,15 @@
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\bin\Debug\net9.0\Admin.Data.deps.json
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\bin\Debug\net9.0\Admin.Data.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\bin\Debug\net9.0\Admin.Data.pdb
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\Admin.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\Admin.Data.AssemblyInfoInputs.cache
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\Admin.Data.AssemblyInfo.cs
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\Admin.Data.csproj.CoreCompileInputs.cache
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\Admin.Data.sourcelink.json
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\Admin.Data.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\refint\Admin.Data.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\Admin.Data.pdb
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\ref\Admin.Data.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\Admin.Data.csproj.AssemblyReference.cache
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\bin\Debug\net9.0\Admin.Data.runtimeconfig.json
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Data\obj\Debug\net9.0\Admin.Data.genruntimeconfig.cache

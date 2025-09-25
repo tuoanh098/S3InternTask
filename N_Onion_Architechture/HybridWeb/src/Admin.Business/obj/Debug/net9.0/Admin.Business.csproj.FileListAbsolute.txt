@@ -1,0 +1,16 @@
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\bin\Debug\net9.0\Admin.Business.deps.json
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\bin\Debug\net9.0\Admin.Business.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\bin\Debug\net9.0\Admin.Business.pdb
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\bin\Debug\net9.0\Admin.Data.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\bin\Debug\net9.0\Admin.Data.pdb
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\Admin.Business.csproj.AssemblyReference.cache
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\Admin.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\Admin.Business.AssemblyInfoInputs.cache
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\Admin.Business.AssemblyInfo.cs
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\Admin.Business.csproj.CoreCompileInputs.cache
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\Admin.Business.sourcelink.json
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\Admin.Bu.A494E7DF.Up2Date
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\Admin.Business.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\refint\Admin.Business.dll
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\Admin.Business.pdb
+D:\Repos\N_Onion_Architechture\HybridWeb\src\Admin.Business\obj\Debug\net9.0\ref\Admin.Business.dll
