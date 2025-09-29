@@ -1,0 +1,12 @@
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\bin\Debug\net9.0\Shared.Contracts.deps.json
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\bin\Debug\net9.0\Shared.Contracts.dll
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\bin\Debug\net9.0\Shared.Contracts.pdb
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.AssemblyInfoInputs.cache
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.AssemblyInfo.cs
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.csproj.CoreCompileInputs.cache
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.sourcelink.json
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.dll
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\refint\Shared.Contracts.dll
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.pdb
+D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\ref\Shared.Contracts.dll

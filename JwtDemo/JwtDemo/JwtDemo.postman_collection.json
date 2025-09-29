@@ -1,0 +1,162 @@
+﻿{
+    "info": {
+        "name": "JwtDemo",
+        "_postman_id": "e2f1e2b8-aaaa-bbbb-cccc-000000000001",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "https://localhost:57675"
+        },
+        {
+            "key": "access",
+            "value": ""
+        },
+        {
+            "key": "refresh",
+            "value": ""
+        },
+        {
+            "key": "access_expiresAt",
+            "value": "0"
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "exec": [
+                    "// Auto-refresh before protected calls (skip for login/refresh/logout)",
+                    "const url = pm.request.url.toString();",
+                    "const skip = url.includes('/api/auth/login') || url.includes('/api/auth/refresh') || url.includes('/api/auth/logout');",
+                    "if (skip) return;",
+                    "",
+                    "const now = Date.now();",
+                    "const exp = Number(pm.collectionVariables.get('access_expiresAt') || 0);",
+                    "const needRefresh = !pm.collectionVariables.get('access') || now >= exp;",
+                    "if (!needRefresh) return;",
+                    "",
+                    "const baseUrl = pm.collectionVariables.get('https://localhost:7015');",
+                    "const refreshFromVar = pm.collectionVariables.get('refresh');",
+                    "",
+                    "pm.sendRequest({",
+                    "  url: baseUrl + '/api/auth/refresh',",
+                    "  method: 'POST',",
+                    "  header: { 'Content-Type': 'application/json' },",
+                    "  body: { mode: 'raw', raw: JSON.stringify({ refreshToken: refreshFromVar || undefined }) },",
+                    "}, function (err, res) {",
+                    "  if (err || !res) {",
+                    "    console.log('Auto-refresh failed', err);",
+                    "    return;",
+                    "  }",
+                    "  try {",
+                    "    const data = res.json();",
+                    "    if (data && data.accessToken) {",
+                    "      pm.collectionVariables.set('access', data.accessToken);",
+                    "      if (data.refreshToken) pm.collectionVariables.set('refresh', data.refreshToken);",
+                    "      const ttl = Number(data.expiresIn || 0) * 1000;",
+                    "      pm.collectionVariables.set('access_expiresAt', String(Date.now() + Math.max(0, ttl - 15000))); // 15s buffer",
+                    "    }",
+                    "  } catch (e) { console.log('Parse refresh error', e); }",
+                    "});"
+                ],
+                "type": "text/javascript"
+            }
+        }
+    ],
+    "item": [
+        {
+            "name": "Login",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": "{{baseUrl}}/api/auth/login",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"userName\": \"demo\",\n  \"password\": \"Pass@123\"\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test('Save tokens', function () {",
+                            "  const data = pm.response.json();",
+                            "  pm.collectionVariables.set('access', data.accessToken || '');",
+                            "  if (data.refreshToken) pm.collectionVariables.set('refresh', data.refreshToken);",
+                            "  const ttl = Number(data.expiresIn || 0) * 1000;",
+                            "  pm.collectionVariables.set('access_expiresAt', String(Date.now() + Math.max(0, ttl - 15000))); // 15s buffer",
+                            "});",
+                            "",
+                            "// (Optional) capture cookie value too",
+                            "const c = pm.cookies.get('refreshToken');",
+                            "if (c) pm.collectionVariables.set('refresh', c);"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Me (protected)",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer {{access}}"
+                    }
+                ],
+                "url": "{{baseUrl}}/api/auth/me"
+            }
+        },
+        {
+            "name": "Refresh (manual)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": "{{baseUrl}}/api/auth/refresh",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"refreshToken\": \"{{refresh}}\"\n}"
+                }
+            },
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            "pm.test('Update tokens after refresh', function () {",
+                            "  const data = pm.response.json();",
+                            "  pm.collectionVariables.set('access', data.accessToken || '');",
+                            "  if (data.refreshToken) pm.collectionVariables.set('refresh', data.refreshToken);",
+                            "  const ttl = Number(data.expiresIn || 0) * 1000;",
+                            "  pm.collectionVariables.set('access_expiresAt', String(Date.now() + Math.max(0, ttl - 15000)));",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Logout",
+            "request": {
+                "method": "POST",
+                "url": "{{baseUrl}}/api/auth/logout"
+            }
+        }
+    ]
+}

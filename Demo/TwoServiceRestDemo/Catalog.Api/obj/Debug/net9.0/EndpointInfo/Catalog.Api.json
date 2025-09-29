@@ -1,0 +1,47 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Catalog.Api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/catalog": {
+      "get": {
+        "tags": [
+          "Catalog.Api"
+        ],
+        "operationId": "GetCatalog",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/catalog/books/{id}": {
+      "get": {
+        "tags": [
+          "Catalog.Api"
+        ],
+        "operationId": "GetBook",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}
