@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="6.0.4" />
   </ItemGroup>
 
 </Project>

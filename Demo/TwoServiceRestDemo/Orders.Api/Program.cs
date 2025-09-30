@@ -1,47 +1,93 @@
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
 using Shared.Contracts;
+using NLog;
+using NLog.Web;
+using Orders.Api.Http;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Read base URL of Catalog service
-var catalogBase = builder.Configuration["Catalog:BaseUrl"]
-                  ?? throw new InvalidOperationException("Missing Catalog:BaseUrl");
-
-// Register a typed HttpClient for Catalog
-builder.Services.AddHttpClient<ICatalogClient, CatalogClient>(c =>
+var logger = LogManager.Setup()
+                       .LoadConfigurationFromAppSettings()   // đọc nlog.config
+                       .GetCurrentClassLogger();
+try
 {
-    c.BaseAddress = new Uri(catalogBase);
-});
+    var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+    builder.Services.AddTransient<HttpClientLoggingHandler>();
 
-// Demo application service (very thin)
-builder.Services.AddScoped<CheckoutService>();
+    // Read base URL of Catalog service
+    var catalogBase = builder.Configuration["Catalog:BaseUrl"]
+                      ?? throw new InvalidOperationException("Missing Catalog:BaseUrl");
+    builder.Logging.ClearProviders();
+    builder.Host.UseNLog();
 
-var app = builder.Build();
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-// Endpoint: quote an order total by calling Catalog over HTTP
-app.MapGet("/api/orders/quote/{bookId:long}/{qty:int}", async (long bookId, int qty, CheckoutService svc) =>
-{
-    try
+    // Log HTTP in/out (đổ vào ILogger -> NLog)
+    builder.Services.AddHttpLogging(o =>
     {
-        var total = await svc.QuoteAsync(bookId, qty);
-        return Results.Ok(new { bookId, qty, total });
+        o.LoggingFields = Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.RequestMethod
+                        | Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.RequestPath
+                        | Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponseStatusCode
+                        | Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.Duration;
+    });
+
+    // Register a typed HttpClient for Catalog
+    builder.Services.AddHttpClient<ICatalogClient, CatalogClient>(c =>
+    {
+        c.BaseAddress = new Uri(catalogBase);
+    }).AddHttpMessageHandler<HttpClientLoggingHandler>();
+
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
+
+    // Demo application service (very thin)
+    builder.Services.AddScoped<CheckoutService>();
+
+    var app = builder.Build();
+
+    app.UseHttpLogging();
+
+    // Correlation Id (ghi vào scope để NLog lấy ${scopeproperty:CorrelationId})
+    app.Use(async (ctx, next) =>
+    {
+        var cid = ctx.Request.Headers["X-Correlation-Id"].FirstOrDefault()
+                  ?? Guid.NewGuid().ToString("n");
+        ctx.Response.Headers["X-Correlation-Id"] = cid;
+        using (app.Logger.BeginScope(new Dictionary<string, object> { ["CorrelationId"] = cid }))
+        {
+            await next();
+        }
+    });
+
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
     }
-    catch (ArgumentOutOfRangeException ex) { return Results.BadRequest(new { error = ex.Message }); }
-    catch (InvalidOperationException ex) { return Results.BadRequest(new { error = ex.Message }); }
-})
-.WithName("QuoteOrder")
-.WithOpenApi();
 
-app.Run();
+    // Endpoint: quote an order total by calling Catalog over HTTP
+    app.MapGet("/api/orders/quote/{bookId:long}/{qty:int}", async (long bookId, int qty, CheckoutService svc) =>
+    {
+        try
+        {
+            var total = await svc.QuoteAsync(bookId, qty);
+            return Results.Ok(new { bookId, qty, total });
+        }
+        catch (ArgumentOutOfRangeException ex) { return Results.BadRequest(new { error = ex.Message }); }
+        catch (InvalidOperationException ex) { return Results.BadRequest(new { error = ex.Message }); }
+    })
+    .WithName("QuoteOrder")
+    .WithOpenApi();
 
+    app.Run();
+
+}
+catch (Exception ex)
+{
+    logger.Error(ex, "Stopped program because of exception");
+    throw;
+}
+finally
+{
+    LogManager.Shutdown();
+}
 
 interface ICatalogClient
 {
@@ -69,3 +115,4 @@ class CheckoutService(ICatalogClient catalog)
         return book.Price * qty;
     }
 }
+

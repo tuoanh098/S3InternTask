@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Gateway\\Gateway.csproj": {}
+    "D:\\Repos\\Demo\\TwoServiceRestDemo\\Gateway\\Gateway.csproj": {}
   },
   "projects": {
-    "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Gateway\\Gateway.csproj": {
+    "D:\\Repos\\Demo\\TwoServiceRestDemo\\Gateway\\Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Gateway\\Gateway.csproj",
+        "projectUniqueName": "D:\\Repos\\Demo\\TwoServiceRestDemo\\Gateway\\Gateway.csproj",
         "projectName": "Gateway",
-        "projectPath": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Gateway\\Gateway.csproj",
+        "projectPath": "D:\\Repos\\Demo\\TwoServiceRestDemo\\Gateway\\Gateway.csproj",
         "packagesPath": "C:\\Users\\oanh.vu\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Gateway\\obj\\",
+        "outputPath": "D:\\Repos\\Demo\\TwoServiceRestDemo\\Gateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "Ocelot": {
               "target": "Package",
               "version": "[20.*, )"

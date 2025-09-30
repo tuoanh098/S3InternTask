@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__2",
     "RelativePath": "api/catalog",
     "HttpMethod": "GET",
     "IsController": false,
@@ -18,7 +18,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__1",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__3",
     "RelativePath": "api/catalog/books/{id:long}",
     "HttpMethod": "GET",
     "IsController": false,

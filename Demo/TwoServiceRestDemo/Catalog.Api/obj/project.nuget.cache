@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "37OfEGE0hTw=",
+  "dgSpecHash": "zSAaPqVkG2A=",
   "success": true,
-  "projectFilePath": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Catalog.Api\\Catalog.Api.csproj",
+  "projectFilePath": "D:\\Repos\\Demo\\TwoServiceRestDemo\\Catalog.Api\\Catalog.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oanh.vu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.8\\microsoft.aspnetcore.openapi.8.0.8.nupkg.sha512",
     "C:\\Users\\oanh.vu\\.nuget\\packages\\microsoft.extensions.ambientmetadata.application\\9.9.0\\microsoft.extensions.ambientmetadata.application.9.9.0.nupkg.sha512",
@@ -33,6 +33,9 @@
     "C:\\Users\\oanh.vu\\.nuget\\packages\\microsoft.extensions.telemetry\\9.9.0\\microsoft.extensions.telemetry.9.9.0.nupkg.sha512",
     "C:\\Users\\oanh.vu\\.nuget\\packages\\microsoft.extensions.telemetry.abstractions\\9.9.0\\microsoft.extensions.telemetry.abstractions.9.9.0.nupkg.sha512",
     "C:\\Users\\oanh.vu\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\oanh.vu\\.nuget\\packages\\nlog\\6.0.4\\nlog.6.0.4.nupkg.sha512",
+    "C:\\Users\\oanh.vu\\.nuget\\packages\\nlog.extensions.logging\\6.0.4\\nlog.extensions.logging.6.0.4.nupkg.sha512",
+    "C:\\Users\\oanh.vu\\.nuget\\packages\\nlog.web.aspnetcore\\6.0.4\\nlog.web.aspnetcore.6.0.4.nupkg.sha512",
     "C:\\Users\\oanh.vu\\.nuget\\packages\\polly.core\\8.4.2\\polly.core.8.4.2.nupkg.sha512",
     "C:\\Users\\oanh.vu\\.nuget\\packages\\polly.extensions\\8.4.2\\polly.extensions.8.4.2.nupkg.sha512",
     "C:\\Users\\oanh.vu\\.nuget\\packages\\polly.ratelimiting\\8.4.2\\polly.ratelimiting.8.4.2.nupkg.sha512",

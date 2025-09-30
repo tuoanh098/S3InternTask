@@ -570,6 +570,56 @@
           }
         }
       },
+      "NLog/6.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/6.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "NLog": "6.0.4"
+        },
+        "compile": {
+          "lib/net8.0/NLog.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/NLog.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/6.0.4": {
+        "type": "package",
+        "dependencies": {
+          "NLog.Extensions.Logging": "6.0.4"
+        },
+        "compile": {
+          "lib/net8.0/NLog.Web.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/NLog.Web.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Polly.Core/8.4.2": {
         "type": "package",
         "compile": {
@@ -700,6 +750,9 @@
       "Shared.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NLog.Web.AspNetCore": "6.0.4"
+        },
         "compile": {
           "bin/placeholder/Shared.Contracts.dll": {}
         },
@@ -1723,6 +1776,72 @@
         "microsoft.openapi.nuspec"
       ]
     },
+    "NLog/6.0.4": {
+      "sha512": "Xr+lIk1ZlTTFXEqnxQVLxrDqZlt2tm5X+/AhJbaY2emb/dVtGDiU5QuEtj3gHtwV/SWlP/rJ922I/BPuOJXlRw==",
+      "type": "package",
+      "path": "nlog/6.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/netstandard2.1/NLog.dll",
+        "lib/netstandard2.1/NLog.xml",
+        "nlog.6.0.4.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "NLog.Extensions.Logging/6.0.4": {
+      "sha512": "8lQ44ZFdJwOJNH61HySZiNUWHjWfT3GYRT3gcTrnlf4mDHWMRKhWvNmr1P0VznT/0sNqpnga+Zy4CECX1SJiDQ==",
+      "type": "package",
+      "path": "nlog.extensions.logging/6.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "README.md",
+        "lib/net462/NLog.Extensions.Logging.dll",
+        "lib/net462/NLog.Extensions.Logging.xml",
+        "lib/net6.0/NLog.Extensions.Logging.dll",
+        "lib/net6.0/NLog.Extensions.Logging.xml",
+        "lib/net8.0/NLog.Extensions.Logging.dll",
+        "lib/net8.0/NLog.Extensions.Logging.xml",
+        "lib/netstandard2.0/NLog.Extensions.Logging.dll",
+        "lib/netstandard2.0/NLog.Extensions.Logging.xml",
+        "lib/netstandard2.1/NLog.Extensions.Logging.dll",
+        "lib/netstandard2.1/NLog.Extensions.Logging.xml",
+        "nlog.extensions.logging.6.0.4.nupkg.sha512",
+        "nlog.extensions.logging.nuspec"
+      ]
+    },
+    "NLog.Web.AspNetCore/6.0.4": {
+      "sha512": "F68UvNGQXp7TTah6sG7tKLQpIluzu+VGtpEj6jB+c0nZqjMjKLAhLFzTBHbl69XWaZ7d9zQfyFkRqPa8U+V98A==",
+      "type": "package",
+      "path": "nlog.web.aspnetcore/6.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "README.md",
+        "lib/net462/NLog.Web.AspNetCore.dll",
+        "lib/net462/NLog.Web.AspNetCore.xml",
+        "lib/net6.0/NLog.Web.AspNetCore.dll",
+        "lib/net6.0/NLog.Web.AspNetCore.xml",
+        "lib/net8.0/NLog.Web.AspNetCore.dll",
+        "lib/net8.0/NLog.Web.AspNetCore.xml",
+        "lib/netstandard2.0/NLog.Web.AspNetCore.dll",
+        "lib/netstandard2.0/NLog.Web.AspNetCore.xml",
+        "nlog.web.aspnetcore.6.0.4.nupkg.sha512",
+        "nlog.web.aspnetcore.nuspec"
+      ]
+    },
     "Polly.Core/8.4.2": {
       "sha512": "BpE2I6HBYYA5tF0Vn4eoQOGYTYIK1BlF5EXVgkWGn3mqUUjbXAr13J6fZVbp7Q3epRR8yshacBMlsHMhpOiV3g==",
       "type": "package",
@@ -1948,6 +2067,7 @@
     "net9.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.8",
       "Microsoft.Extensions.Http.Resilience >= 9.9.0",
+      "NLog.Web.AspNetCore >= 6.0.4",
       "Shared.Contracts >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -1959,11 +2079,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Catalog.Api\\Catalog.Api.csproj",
+      "projectUniqueName": "D:\\Repos\\Demo\\TwoServiceRestDemo\\Catalog.Api\\Catalog.Api.csproj",
       "projectName": "Catalog.Api",
-      "projectPath": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Catalog.Api\\Catalog.Api.csproj",
+      "projectPath": "D:\\Repos\\Demo\\TwoServiceRestDemo\\Catalog.Api\\Catalog.Api.csproj",
       "packagesPath": "C:\\Users\\oanh.vu\\.nuget\\packages\\",
-      "outputPath": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Catalog.Api\\obj\\",
+      "outputPath": "D:\\Repos\\Demo\\TwoServiceRestDemo\\Catalog.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1985,8 +2105,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Shared.Contracts\\Shared.Contracts.csproj": {
-              "projectPath": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\Shared.Contracts\\Shared.Contracts.csproj"
+            "D:\\Repos\\Demo\\TwoServiceRestDemo\\Shared.Contracts\\Shared.Contracts.csproj": {
+              "projectPath": "D:\\Repos\\Demo\\TwoServiceRestDemo\\Shared.Contracts\\Shared.Contracts.csproj"
             }
           }
         }
@@ -2014,6 +2134,10 @@
           "Microsoft.Extensions.Http.Resilience": {
             "target": "Package",
             "version": "[9.9.0, )"
+          },
+          "NLog.Web.AspNetCore": {
+            "target": "Package",
+            "version": "[6.0.4, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

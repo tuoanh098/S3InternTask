@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "8.0.8",
           "Microsoft.Extensions.Http.Resilience": "9.9.0",
+          "NLog.Web.AspNetCore": "6.0.4",
           "Shared.Contracts": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
@@ -359,6 +360,38 @@
           }
         }
       },
+      "NLog/6.0.4": {
+        "runtime": {
+          "lib/netstandard2.1/NLog.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.4.4534"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/6.0.4": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.9",
+          "Microsoft.Extensions.Logging": "9.0.9",
+          "NLog": "6.0.4"
+        },
+        "runtime": {
+          "lib/net8.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.4.735"
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/6.0.4": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "6.0.4"
+        },
+        "runtime": {
+          "lib/net8.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.4.1334"
+          }
+        }
+      },
       "Polly.Core/8.4.2": {
         "runtime": {
           "lib/net8.0/Polly.Core.dll": {
@@ -432,6 +465,9 @@
       },
       "System.Threading.RateLimiting/8.0.0": {},
       "Shared.Contracts/1.0.0": {
+        "dependencies": {
+          "NLog.Web.AspNetCore": "6.0.4"
+        },
         "runtime": {
           "Shared.Contracts.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -649,6 +685,27 @@
       "sha512": "sha512-tTaBT8qjk3xINfESyOPE2rIellPvB7qpVqiWiyA/lACVvz+xOGiXhFUfohcx82NLbi5avzLW0lx+s6oAqQijfw==",
       "path": "microsoft.openapi/1.6.14",
       "hashPath": "microsoft.openapi.1.6.14.nupkg.sha512"
+    },
+    "NLog/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xr+lIk1ZlTTFXEqnxQVLxrDqZlt2tm5X+/AhJbaY2emb/dVtGDiU5QuEtj3gHtwV/SWlP/rJ922I/BPuOJXlRw==",
+      "path": "nlog/6.0.4",
+      "hashPath": "nlog.6.0.4.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8lQ44ZFdJwOJNH61HySZiNUWHjWfT3GYRT3gcTrnlf4mDHWMRKhWvNmr1P0VznT/0sNqpnga+Zy4CECX1SJiDQ==",
+      "path": "nlog.extensions.logging/6.0.4",
+      "hashPath": "nlog.extensions.logging.6.0.4.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F68UvNGQXp7TTah6sG7tKLQpIluzu+VGtpEj6jB+c0nZqjMjKLAhLFzTBHbl69XWaZ7d9zQfyFkRqPa8U+V98A==",
+      "path": "nlog.web.aspnetcore/6.0.4",
+      "hashPath": "nlog.web.aspnetcore.6.0.4.nupkg.sha512"
     },
     "Polly.Core/8.4.2": {
       "type": "package",

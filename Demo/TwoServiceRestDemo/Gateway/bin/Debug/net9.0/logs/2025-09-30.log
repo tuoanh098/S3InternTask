@@ -1,0 +1,8 @@
+{"ts":"2025-09-30T10:15:19.5080785Z","level":"Info","logger":"Microsoft.Hosting.Lifetime","msg":"Now listening on: http://localhost:6000"}
+{"ts":"2025-09-30T10:15:19.8786670Z","level":"Info","logger":"Microsoft.Hosting.Lifetime","msg":"Application started. Press Ctrl+C to shut down."}
+{"ts":"2025-09-30T10:15:19.8878495Z","level":"Info","logger":"Microsoft.Hosting.Lifetime","msg":"Hosting environment: Development"}
+{"ts":"2025-09-30T10:15:19.8878495Z","level":"Info","logger":"Microsoft.Hosting.Lifetime","msg":"Content root path: D:\\Repos\\Demo\\TwoServiceRestDemo\\Gateway"}
+{"ts":"2025-09-30T10:25:11.3659015Z","level":"Info","logger":"Microsoft.Hosting.Lifetime","msg":"Now listening on: http://localhost:6000"}
+{"ts":"2025-09-30T10:25:11.6406483Z","level":"Info","logger":"Microsoft.Hosting.Lifetime","msg":"Application started. Press Ctrl+C to shut down."}
+{"ts":"2025-09-30T10:25:11.6861775Z","level":"Info","logger":"Microsoft.Hosting.Lifetime","msg":"Hosting environment: Development"}
+{"ts":"2025-09-30T10:25:11.6886301Z","level":"Info","logger":"Microsoft.Hosting.Lifetime","msg":"Content root path: D:\\Repos\\Demo\\TwoServiceRestDemo\\Gateway"}

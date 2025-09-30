@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\OcelotGateway\\OcelotGateway.csproj": {}
+    "D:\\Repos\\Demo\\TwoServiceRestDemo\\OcelotGateway\\OcelotGateway.csproj": {}
   },
   "projects": {
-    "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\OcelotGateway\\OcelotGateway.csproj": {
+    "D:\\Repos\\Demo\\TwoServiceRestDemo\\OcelotGateway\\OcelotGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\OcelotGateway\\OcelotGateway.csproj",
+        "projectUniqueName": "D:\\Repos\\Demo\\TwoServiceRestDemo\\OcelotGateway\\OcelotGateway.csproj",
         "projectName": "OcelotGateway",
-        "projectPath": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\OcelotGateway\\OcelotGateway.csproj",
+        "projectPath": "D:\\Repos\\Demo\\TwoServiceRestDemo\\OcelotGateway\\OcelotGateway.csproj",
         "packagesPath": "C:\\Users\\oanh.vu\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\Monolithic\\TwoServiceRestDemo\\OcelotGateway\\obj\\",
+        "outputPath": "D:\\Repos\\Demo\\TwoServiceRestDemo\\OcelotGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,6 +54,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.9, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
             }
           },
           "imports": [
