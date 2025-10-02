@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Shop — Cảm ơn bạn</title>
+  <meta name="description" content="Xác nhận đơn hàng Mini Shop" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Bỏ qua nội dung</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">MiniShop</a>
+      <div class="grow"></div>
+      <a class="btn" href="index.html">← Tiếp tục mua sắm</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="thankyou">
+      <div class="card thanks-card" aria-live="polite">
+        <h1>Cảm ơn bạn đã đặt hàng 🎉</h1>
+        <p class="muted">Chúng tôi đã nhận được đơn của bạn. Thông tin chi tiết ở bên dưới.</p>
+
+        <div id="empty" class="empty" hidden>
+          <p>Không tìm thấy dữ liệu đơn gần nhất.</p>
+          <a class="btn" href="index.html">Quay lại mua sắm</a>
+        </div>
+
+        <div id="order-wrap" class="order-wrap" hidden>
+          <div class="order-meta">
+            <div>
+              <div class="label">Mã đơn</div>
+              <div class="value" id="order-id">#—</div>
+            </div>
+            <div>
+              <div class="label">Thời gian</div>
+              <div class="value" id="order-date">—</div>
+            </div>
+            <div>
+              <div class="label">Thanh toán</div>
+              <div class="value" id="order-payment">—</div>
+            </div>
+            <div>
+              <div class="label">Trạng thái</div>
+              <div class="value" id="order-status">—</div>
+            </div>
+          </div>
+
+          <div class="ship-to card sub">
+            <h2>Giao đến</h2>
+            <div class="to-row">
+              <strong id="order-name">—</strong>
+              <div class="muted" id="order-address">—</div>
+              <div class="muted" id="order-contact">—</div>
+            </div>
+          </div>
+
+          <div class="card sub">
+            <h2>Sản phẩm</h2>
+            <div id="sum-items" class="sum-items"></div>
+
+            <div class="sum-line">
+              <span>Tạm tính</span>
+              <strong id="sum-subtotal">0₫</strong>
+            </div>
+            <div class="sum-line">
+              <span>Phí vận chuyển</span>
+              <span id="sum-ship">Miễn phí</span>
+            </div>
+            <div class="sum-total">
+              <span>Tổng cộng</span>
+              <strong id="sum-total">0₫</strong>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a class="btn" href="index.html">← Về trang chủ</a>
+            <button id="btn-print" class="btn primary" type="button">In/Xuất hoá đơn</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p class="muted">© 2025 MiniShop</p>
+  </footer>
+
+  <script src="assets/thanks.js" defer></script>
+</body>
+</html>
