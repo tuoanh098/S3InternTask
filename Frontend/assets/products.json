@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sp-1",
+    "name": "Giày Runner 1",
+    "price": 690000,
+    "image": "https://picsum.photos/seed/sp1/400/300",
+    "description": "Giày chạy bộ nhẹ, thoáng khí.",
+    "category": "giay",
+    "rating": 4.6,
+    "stock": 12
+  },
+  {
+    "id": "sp-2",
+    "name": "Giày Runner 2",
+    "price": 890000,
+    "image": "https://picsum.photos/seed/sp2/400/300",
+    "description": "Đệm tốt, phù hợp đi làm và chạy bộ.",
+    "category": "giay",
+    "rating": 4.8,
+    "stock": 8
+  },
+  {
+    "id": "sp-3",
+    "name": "Áo Thun Classic",
+    "price": 199000,
+    "image": "https://picsum.photos/seed/sp3/400/300",
+    "description": "Cotton 100% co giãn 4 chiều.",
+    "category": "ao",
+    "rating": 4.3,
+    "stock": 24
+  },
+  {
+    "id": "sp-4",
+    "name": "Áo Thun Basic",
+    "price": 179000,
+    "image": "https://picsum.photos/seed/sp4/400/300",
+    "description": "Form rộng, thấm hút tốt.",
+    "category": "ao",
+    "rating": 4.1,
+    "stock": 0
+  },
+  {
+    "id": "sp-5",
+    "name": "Túi Sling Urban",
+    "price": 259000,
+    "image": "https://picsum.photos/seed/sp5/400/300",
+    "description": "Đựng đồ gọn nhẹ, nhiều ngăn.",
+    "category": "tui",
+    "rating": 4.5,
+    "stock": 15
+  },
+  {
+    "id": "sp-6",
+    "name": "Mũ Cap Logo",
+    "price": 129000,
+    "image": "https://picsum.photos/seed/sp6/400/300",
+    "description": "Chống nắng, thấm mồ hôi.",
+    "category": "mu",
+    "rating": 4.0,
+    "stock": 30
+  }
+]

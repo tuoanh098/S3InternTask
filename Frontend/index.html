@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Shop</title>
+  <meta name="description" content="Demo HTML/CSS/JS Mini Shop" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Bỏ qua nội dung</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">MiniShop</a>
+      <button id="btn-menu" class="btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links" class="nav-links" hidden>
+        <li><a href="#catalog">Sản phẩm</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+      <div class="grow"></div>
+      <button id="btn-cart" class="btn" aria-haspopup="dialog" aria-controls="cart">🛒 <span id="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <h1>Mua sắm đơn giản</h1>
+      <p>Tìm kiếm, so sánh, thêm vào giỏ cực nhanh.</p>
+    </section>
+
+    <section class="toolbar container">
+      <input id="q" type="search" placeholder="Tìm sản phẩm..." />
+      <select id="sort">
+        <option value="">Sắp xếp</option>
+        <option value="price-asc">Giá ↑</option>
+        <option value="price-desc">Giá ↓</option>
+        <option value="rating-desc">Đánh giá</option>
+      </select>
+    </section>
+
+    <section id="catalog" class="grid" aria-live="polite"></section>
+  </main>
+
+  <!-- Modal chi tiết -->
+  <dialog id="product-modal" aria-labelledby="pm-title">
+    <article>
+      <h2 id="pm-title"></h2>
+      <img id="pm-img" alt="" />
+      <p id="pm-price"></p>
+      <p id="pm-desc"></p>
+      <div class="actions">
+        <button id="pm-add" class="btn primary">Thêm vào giỏ</button>
+        <button id="pm-close" class="btn">Đóng</button>
+      </div>
+    </article>
+  </dialog>
+
+  <!-- Cart sidebar -->
+  <dialog id="cart" class="cart" aria-labelledby="cart-title">
+    <h2 id="cart-title">Giỏ hàng</h2>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <strong>Tổng: <span id="cart-total">0₫</span></strong>
+      <a class="btn" href="checkout.html">Checkout</a>
+      <button id="cart-close" class="btn">Đóng</button>
+    </div>
+  </dialog>
+
+  <!-- Thứ tự script: ui -> cart -> app -->
+  <script src="assets/ui.js" defer></script>
+  <script src="assets/cart.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
