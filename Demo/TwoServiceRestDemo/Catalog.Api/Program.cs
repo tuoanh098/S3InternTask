@@ -1,6 +1,7 @@
-﻿using Shared.Contracts;
+﻿using Catalog.Api;
 using NLog;
 using NLog.Web;
+using Shared.Contracts;
 
 var logger = LogManager.Setup()
                        .LoadConfigurationFromAppSettings()   // đọc nlog.config
@@ -45,27 +46,31 @@ try
         }
     });
 
-    // In-memory catalog (no database to keep demo simple)
-    var books = new List<BookDto>
-{
-    new(1, "Clean Architecture", 39.90m, 25),
-    new(2, "Deep Work",          18.75m, 20),
-    new(3, "Kubernetes in Action", 49.00m, 10)
-};
-
-    app.MapGet("/api/catalog", () => Results.Ok(books))
-       .WithName("GetCatalog")
-       .WithOpenApi();
-
-    app.MapGet("/api/catalog/books/{id:long}", (long id) =>
+    var seed = new[]
     {
-        var b = books.FirstOrDefault(x => x.Id == id);
+    new BookDto(1, "Clean Architecture", 39.90m, 25),
+    new BookDto(2, "Deep Work",          18.75m, 20),
+    new BookDto(3, "Kubernetes in Action", 49.00m, 10)
+    };
+
+    // Đăng ký service in-memory
+    builder.Services.AddSingleton<IBookCatalog>(new InMemoryBookCatalog(seed));
+
+    app.MapGet("/api/catalog", async (IBookCatalog catalog, CancellationToken ct) =>
+    {
+        var items = await catalog.GetAllAsync(ct);
+        return Results.Ok(items);
+    })
+    .WithName("GetCatalog")
+    .WithOpenApi();
+
+    app.MapGet("/api/catalog/books/{id:long}", async (long id, IBookCatalog catalog, CancellationToken ct) =>
+    {
+        var b = await catalog.GetByIdAsync(id, ct);
         return b is null ? Results.NotFound() : Results.Ok(b);
     })
     .WithName("GetBook")
     .WithOpenApi();
-
-    app.Run();
 }
 catch (Exception ex)
 {
@@ -76,3 +81,4 @@ finally
 {
     LogManager.Shutdown();
 }
+public partial class Program { }

@@ -66,6 +66,7 @@ D:\Repos\Monolithic\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Microsoft.Ex
 D:\Repos\Monolithic\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Polly.Core.dll
 D:\Repos\Monolithic\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Polly.Extensions.dll
 D:\Repos\Monolithic\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Polly.RateLimiting.dll
+D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\nlog.config
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\appsettings.Development.json
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\appsettings.json
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Catalog.Api.staticwebassets.endpoints.json
@@ -102,6 +103,9 @@ D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Microsoft.Extensio
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Microsoft.Extensions.Telemetry.dll
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Microsoft.Extensions.Telemetry.Abstractions.dll
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\NLog.dll
+D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\NLog.Extensions.Logging.dll
+D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\NLog.Web.AspNetCore.dll
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Polly.Core.dll
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Polly.Extensions.dll
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\Polly.RateLimiting.dll
@@ -133,7 +137,4 @@ D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\obj\Debug\net9.0\refint\Catalog.Api
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\obj\Debug\net9.0\Catalog.Api.pdb
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\obj\Debug\net9.0\Catalog.Api.genruntimeconfig.cache
 D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\obj\Debug\net9.0\ref\Catalog.Api.dll
-D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\nlog.config
-D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\NLog.dll
-D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\NLog.Extensions.Logging.dll
-D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\bin\Debug\net9.0\NLog.Web.AspNetCore.dll
+D:\Repos\Demo\TwoServiceRestDemo\Catalog.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

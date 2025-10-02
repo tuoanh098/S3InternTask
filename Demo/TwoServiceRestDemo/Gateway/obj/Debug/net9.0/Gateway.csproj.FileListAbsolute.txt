@@ -40,6 +40,7 @@ D:\Repos\Monolithic\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\refint\Gateway.d
 D:\Repos\Monolithic\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\Gateway.pdb
 D:\Repos\Monolithic\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\Gateway.genruntimeconfig.cache
 D:\Repos\Monolithic\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\ref\Gateway.dll
+D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\nlog.config
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\appsettings.Development.json
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\appsettings.json
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\ocelot.json
@@ -57,6 +58,9 @@ D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\Microsoft.AspNetCore.M
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\Microsoft.Extensions.DiagnosticAdapter.dll
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\Newtonsoft.Json.dll
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\NLog.dll
+D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\NLog.Extensions.Logging.dll
+D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\NLog.Web.AspNetCore.dll
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\Ocelot.dll
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\Gateway.csproj.AssemblyReference.cache
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\rpswa.dswa.cache.json
@@ -75,13 +79,10 @@ D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\staticwebassets.build.
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\staticwebassets.build.json.cache
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\staticwebassets.development.json
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\Gateway.csproj.Up2Date
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\Gateway.dll
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\refint\Gateway.dll
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\Gateway.pdb
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\Gateway.genruntimeconfig.cache
 D:\Repos\Demo\TwoServiceRestDemo\Gateway\obj\Debug\net9.0\ref\Gateway.dll
-D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\nlog.config
-D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\NLog.dll
-D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\NLog.Extensions.Logging.dll
-D:\Repos\Demo\TwoServiceRestDemo\Gateway\bin\Debug\net9.0\NLog.Web.AspNetCore.dll

@@ -13,6 +13,7 @@ D:\Repos\Monolithic\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\ref\Sha
 D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\bin\Debug\net9.0\Shared.Contracts.deps.json
 D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\bin\Debug\net9.0\Shared.Contracts.dll
 D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\bin\Debug\net9.0\Shared.Contracts.pdb
+D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.csproj.AssemblyReference.cache
 D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.GeneratedMSBuildEditorConfig.editorconfig
 D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.AssemblyInfoInputs.cache
 D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.AssemblyInfo.cs
@@ -22,4 +23,3 @@ D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contra
 D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\refint\Shared.Contracts.dll
 D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.pdb
 D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\ref\Shared.Contracts.dll
-D:\Repos\Demo\TwoServiceRestDemo\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.csproj.AssemblyReference.cache
